@@ -1,7 +1,7 @@
 # **Application interfaces**
 
-Since the SSG48 gripper is based on [spectral micro BLDC drivers](https://github.com/PCrnjak/Spectral-Micro-BLDC-controller), it inherits all of their control methods and functionality. <br />
-Here we will describe only ones that are needed for gripper operation. For full list of commands go [Here](https://source-robotics.github.io/Spectral-BLDC-docs/apage7_can/). <br />
+Since the MSG gripper is based on STEPFOC drivers that are in turn based on [spectral micro BLDC drivers](https://github.com/PCrnjak/Spectral-Micro-BLDC-controller), it inherits all of their control methods and functionality. <br />
+Here we will describe only ones that are needed for gripper operation. For full list of commands go [Here](https://source-robotics.github.io/STEPFOC-docs/can/). <br />
 Also since the gripper is based on Spectral micro it has UART interface you can control it with.
 
 
@@ -18,7 +18,7 @@ Node IDs can range from 0 - 15 Meaning you can have maximum 16 different devices
 Bits **6 - 1** of the CAN ID represent Command ID.<br />
 Command IDs can range from 0 - 63.
 
-Bit **0** represents error bit. If spectral micro BLDC controller has any active error this bit will be set to 1. Note this bit is send always by the driver and is independent about the command ID and data.
+Bit **0** represents error bit. If STEPFOC has any active error this bit will be set to 1. Note this bit is send always by the driver and is independent about the command ID and data.
 
 Node with smallest Node ID is strongest in CAN bus arbitration.
 
@@ -34,7 +34,7 @@ Node with smallest Node ID is strongest in CAN bus arbitration.
 * Length: 4 byte <br />
 * Type of frame: standard <br />
 
-Size (bytes) | Variable (Spectral_BLDC Lib python attribute)  | Type | Details
+Size (bytes) | Variable (STEPFCO Lib python attribute)  | Type | Details
 ---- | ---- | ---- | ----
 0  | gripper_position | unsigned 8bit |
 1-2 | gripper_current |  16 bit signed |
@@ -169,7 +169,7 @@ Size (bytes) | Variable | Type
 
 ## **UART interface**
 
-For full list of UART commands available to the SSG48 gripper check this [link!](https://source-robotics.github.io/Spectral-BLDC-docs/apage6_uart/)
+For full list of UART commands available to the SSG48 gripper check this [link!](https://source-robotics.github.io/STEPFOC-docs/uart/)
 
 ### **Gripper commands**
 Commands used when in gripper mode. Procedure: 
