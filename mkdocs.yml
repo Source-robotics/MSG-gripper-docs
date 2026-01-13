@@ -1,8 +1,12 @@
 site_name: MSG gripper
 site_url: https://PCrnjak.github.io/MSG_gripper/
-repo_url: https://github.com/Source-robotics/SSG48-gripper-docs/ 
+repo_url: https://github.com/PCrnjak/MSG-compliant-AI-stepper-gripper
+
 theme:
   name: material
+  language: en
+  logo: assets/Icon2.png
+
   features:
     - navigation.sections
     - toc.integrate
@@ -14,21 +18,24 @@ theme:
     - content.code.copy
     - content.code.select
     - content.action.edit
-  logo: assets/Icon2.png
-  language: en
+
   palette:
+    # Light mode (default)
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: blue
+      accent: blue
+
+    # Dark mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Switch to dark mode
+        name: Switch to light mode
       primary: blue
-      accent: blur 
-    - scheme: default 
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode    
-      primary: blue
-      accent: blur
+      accent: blue
+
 
 plugins:
 - search

@@ -130,8 +130,8 @@ while True:
 
 ## **Using UART**
 
-To use uart you will have to acces UART port on the SSG48 gripper. Unscrew coupler connector and connect uart adapter to the connector on the image. Note that it uses 3v3, using 5V can destroy your driver/gripper.
-To read mode about how to use UART with SSG48/Spectral micro BLDC go to this [link!](https://source-robotics.github.io/Spectral-BLDC-docs/apage6_uart/)
+To use uart you will have to acces UART port on the MSG gripper. Unscrew coupler connector and connect uart adapter to the connector on the image. Note that it uses 3v3, using 5V can destroy your driver/gripper.
+To read more about how to use UART with MSG/STEPFOC go to this [link!](https://source-robotics.github.io/STEPFOC-docs/uart/)
 
 Compatible USB to uart adapter can be bought here: [Link](https://source-robotics.com/products/usb-to-serial-adapter)
 
@@ -143,7 +143,7 @@ Setup:
 Control:
 
 * Gripvel x (x is value from 0 - 255; 0 being min speed 255 max speed)
-* Gripcur x (x is value from 0 - 1300 [mA])
+* Gripcur x (x is value from 0 - 700 [mA]) (depends what stepper you are using with your MSG gripper)
 * Grippos x (x is vale from 0 - 255; 0 being fully open 255 fully closed)
 
 !!! Note annotate "Note" 
