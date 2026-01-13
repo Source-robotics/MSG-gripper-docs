@@ -1,6 +1,6 @@
 # **Control**
 
-Primary control interface for SSG48 gripper is **CAN bus**. Secondary control mode is with **UART**. 
+Primary control interface for MSG gripper is **CAN bus**. Secondary control mode is with **UART**. 
 
 !!! Tip annotate "" 
     **The gripper can:**

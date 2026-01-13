@@ -3,7 +3,7 @@
 These tests represent termal performance of the MSG gripper under different conditions. The default value for termal error is 75 degrees.
 
 !!! Note annotate "Errors" 
-    If you built SSG48 gripper by yourself and did not place thermistor in the motor coils you risk destroying your gripper during normal operation.
+    If you built MSG gripper by yourself and did not place thermistor in the motor coils you risk destroying your gripper during normal operation.
 
 ## **Performance over multiple days**
 
@@ -16,14 +16,14 @@ These tests represent termal performance of the MSG gripper under different cond
 ## **Max constant current over some time**
 
 * Testing: Hold object
-* Max current setpoint: 300mA
+* Max current setpoint: TBD
 * Tested for 24h
-* Stable motor temperature during testing: 62 degree
-* Ambient temperature:  33 
+* Stable motor temperature during testing: TBD
+* Ambient temperature:  TBD
 
 ## **Max current to trigger termal error**
 
 * Testing: Hold object
-* Max current setpoint: 1600mA
-* Time to trigger termal error under 1600mA load: 4 min
-* Ambient temperature:  33 
+* Max current setpoint: TBD
+* Time to trigger termal error under x load: TBD
+* Ambient temperature:  TBD
